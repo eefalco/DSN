@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>DSN area Map</title>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <gmp-map
+      center="32.25,-110.97"
+      zoom="9"
+      map-id="DSN_ID"
+      style="height: 400px, width: 1200px"
+    >
+       <gmp-advanced-marker
+        position="+32.254,-110.9742"
+        title="Tucson, AZ"
+      ></gmp-advanced-marker>
+      <gmp-advanced-marker
+        position="+32.00944,-109.3888"
+        title="Bonita, AZ"
+	></gmp-advanced-marker>
+      <gmp-advanced-marker
+        position="+32.01785,-109.3208"
+        title="Sugarloaf, AZ"
+	></gmp-advanced-marker>
+      <gmp-advanced-marker
+        position="31.5681465,-111.0506458"
+        title="Tumacacori, AZ"
+	></gmp-advanced-marker>
+    </gmp-map>
+
+    <!-- 
+      The `defer` attribute causes the script to execute after the full HTML
+      document has been parsed. For non-blocking uses, avoiding race conditions,
+      and consistent behavior across browsers, consider loading using Promises. See
+      https://developers.google.com/maps/documentation/javascript/load-maps-js-api
+      for more information.
+      -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=maps,marker&v=beta"
+      defer
+    ></script>
+  </body>
+</html>
